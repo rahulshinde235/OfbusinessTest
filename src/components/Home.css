@@ -1,0 +1,45 @@
+.container {
+  margin: 0 auto;
+  background-color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.issue-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px 10px;
+}
+.issue {
+  display: inline-block;
+  padding: 0 7px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  border: 1px solid transparent;
+  border-radius: 2em;
+  margin-left: 5%;
+}
+.card {
+  border: 1px solid black;
+  color: black;
+}
+.container-right {
+  display: none;
+}
+@media (min-width: 600px) {
+  .item-title {
+    display: inline;
+  }
+  .issue-container {
+    display: inline;
+    flex-flow: row wrap;
+    gap: 0;
+  }
+  .container-right {
+    display: flex;
+    width: 40px;
+    align-items: center;
+    margin-left: 96%;
+  }
+}
